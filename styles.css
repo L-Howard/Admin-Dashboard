@@ -1,0 +1,188 @@
+* {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+
+}
+
+/* sidebar styles start */
+.sidebar {
+    background-color: #282828;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 100px 300px 300px;
+}
+
+.sidebar1 {
+    font-size: 30px;
+}
+
+.sidebar2, .sidebar3 {
+    font-size: 20px;
+}
+
+.sidebar span {
+    margin-right: 10px;
+    color: #4db2ff;
+}
+
+.sidebar div {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* sidebar styles end */
+
+/* main styles start */
+.main {
+    display: grid;
+    background-color: #121212;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    padding: 0 50px;
+}
+
+.main-title {
+    font-size: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.your-projects {
+    grid-row: 1 / 3;
+
+}
+
+.your-projects .title {
+    font-size: 18px;
+
+}
+
+.your-projects .card {
+    background-color: #3f3f3f;
+    height: 170px;
+    text-align: center;
+    border-radius: 10px;
+    border-left: 10px solid #4db2ff;
+}
+
+.announcement-card {
+    background-color: #3f3f3f;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.trending-card {
+    background-color: #3f3f3f;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.trending-card img {
+    width: 20px;
+} 
+
+.announcement-card > div:not(:last-child) {
+    border-bottom: 1px solid #4db2ff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*main styles end */
+
+
+/* header styles start */
+.header {
+    background-color: #3f3f3f;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header span {
+    color: #4db2ff;
+}
+
+button {
+    background-color: #4db2ff;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+}
+
+input {
+    background-color: #8b8b8b;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.search span {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 40px 60px 120px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 200px;
+}
+.user img {
+    width: 40px;
+}
+
+.user-greeting img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-greeting {
+    display: flex;
+    margin-left: 50px;
+    gap: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* header styles end */
+
